@@ -5,28 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Hugo 0.72.0" />
 
-  <title>ERu&#39;s blog</title>
+  <title>Vector Space 的構成要素及條件 &middot; ERu&#39;s blog</title>
 
-  <meta name="description" content="" />
+  <meta name="description" content="詳情請看 Read More" />
 
   
 
-<meta itemprop="name" content="Soho Theme">
-<meta itemprop="description" content="">
+<meta itemprop="name" content="Vector Space 的構成要素及條件">
+<meta itemprop="description" content="詳情請看 Read More">
+<meta itemprop="datePublished" content="2020-06-10T20:10:17&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-10T20:10:17&#43;08:00" />
+<meta itemprop="wordCount" content="62">
+<meta itemprop="image" content="https://ERu085730.github.io/images/profile.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ERu085730.github.io/images/profile.png"/>
 
-<meta name="twitter:title" content="Soho Theme"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Vector Space 的構成要素及條件"/>
+<meta name="twitter:description" content="詳情請看 Read More"/>
 
 
-<meta property="og:title" content="Soho Theme" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ERu085730.github.io/" />
+<meta property="og:title" content="Vector Space 的構成要素及條件" />
+<meta property="og:description" content="詳情請看 Read More" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ERu085730.github.io/post/linear_algebra1/" />
 <meta property="og:image" content="https://ERu085730.github.io/images/profile.png"/>
-<meta property="og:updated_time" content="2020-06-10T20:10:17+08:00" /><meta property="og:site_name" content="Soho Theme" />
+<meta property="article:published_time" content="2020-06-10T20:10:17+08:00" />
+<meta property="article:modified_time" content="2020-06-10T20:10:17+08:00" /><meta property="og:site_name" content="Soho Theme" />
 
 
 
@@ -63,7 +72,6 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://ERu085730.github.io/index.xml" rel="alternate" type="application/rss+xml" title="ERu's blog" />
   </head>
 <body>
   <aside class="sidebar">
@@ -111,63 +119,57 @@
 
 
   <main class="content container">
-  <div class="posts">
-      <article class="post">
-        <h1 class="post-title">
-          <a href="https://ERu085730.github.io/post/linear_algebra1/">Vector Space 的構成要素及條件</a>
-        </h1>
+  <div class="post">
+  <h1>Vector Space 的構成要素及條件</h1>
 
-        <div class="post-date">
-          <time datetime="2020-06-10T20:10:17&#43;0800">Jun 10, 2020</time> · 1 min read
-        </div>
-
-        
-          詳情請看 Read More
-        
-
-        
-        <div class="read-more-link">
-          <a href="/post/linear_algebra1/">Read More</a>
-        </div>
-        
-      </article>
-      <article class="post">
-        <h1 class="post-title">
-          <a href="https://ERu085730.github.io/post/howtomakeasite/">Hugo &amp; Github 如何快速(半自動)更新網站(windows10)</a>
-        </h1>
-
-        <div class="post-date">
-          <time datetime="2020-06-09T14:26:32&#43;0800">Jun 9, 2020</time> · 1 min read
-        </div>
-
-        
-           當你寫好一篇又一篇的新文章卻發現網站沒有 將你的內容更新上去，因此你只好上網搜尋， 卻發現需要一步一步將之前所打過的指令重新 打過一次，但人是懶惰的，所以我們就需要將 上述的動作自動上傳因此我們需要使用以下工 具。
-        
-
-        
-        <div class="read-more-link">
-          <a href="/post/howtomakeasite/">Read More</a>
-        </div>
-        
-      </article>
-      <article class="post">
-        <h1 class="post-title">
-          <a href="https://ERu085730.github.io/post/hello/">Hello</a>
-        </h1>
-
-        <div class="post-date">
-          <time datetime="2020-06-08T18:44:10&#43;0800">Jun 8, 2020</time> · 1 min read
-        </div>
-
-        
-          Hello Everyone
-        
-
-        
-      </article>
+  <div class="post-date">
+    <time datetime="2020-06-10T20:10:17&#43;0800">Jun 10, 2020</time> · 1 min read
   </div>
 
-  
+  <h2 id="vector-space-的構成三要素">Vector Space 的構成三要素</h2>
+<ol>
+<li>V:一個集合 (內部為向量)</li>
+<li>F:稱為體，可進行加減乘除(內部為純量)</li>
+<li>運算符號: &lsquo;+&rsquo;:加法(V加V) 、 &lsquo;·':乘法(F乘V)</li>
+</ol>
+<h2 id="vector-space-的十個成立條件">Vector Space 的十個成立條件</h2>
+<p>以下x,y,z皆屬於V α屬於F</p>
+<ol>
+<li>加法有封閉性</li>
+<li>純量乘法有封閉性</li>
+<li>可交換性 x+y = y+x</li>
+<li>可結合性 (x+y)+z = x+(y+z)</li>
+<li>存在加法單位元素 存在0(零向量) 屬於V s.t. 0+x = x</li>
+<li>存在加法反元素   存在y         屬於V s.t. x+y = 0</li>
+<li>存在純量乘法單位元素 存在1     屬於F      1x  = x</li>
+<li>分配律 a(bx)  = (ab)x</li>
+<li>分配律 a(x+y) = ax + by</li>
+<li>分配律 (a+b)x = ax + bx</li>
+</ol>
+<h2 id="手寫筆記">手寫筆記</h2>
+<p><img src="/images/IMAG1504.jpg" alt="image"></p>
+
+
+  <div class="disqus markdown">
+  <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://https-eru085730-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+</div>
 
 
   </main>

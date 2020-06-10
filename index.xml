@@ -6,10 +6,19 @@
     <description>Recent content in Soho Theme on ERu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jun 2020 14:26:32 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2020 20:10:17 +0800</lastBuildDate>
     
 	<atom:link href="https://ERu085730.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vector Space 的構成要素及條件</title>
+      <link>https://ERu085730.github.io/post/linear_algebra1/</link>
+      <pubDate>Wed, 10 Jun 2020 20:10:17 +0800</pubDate>
+      
+      <guid>https://ERu085730.github.io/post/linear_algebra1/</guid>
+      <description>Vector Space 的構成三要素  V:一個集合 (內部為向量) F:稱為體，可進行加減乘除(內部為純量) 運算符號: &amp;lsquo;+&amp;rsquo;:加法(V加V) 、 &amp;lsquo;·&#39;:乘法(F乘V)  Vector Space 的十個成立條件 以下x,y,z皆屬於V α屬於F</description>
+    </item>
     
     <item>
       <title>Hugo &amp; Github 如何快速(半自動)更新網站(windows10)</title>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>線性代數 on ERu&#39;s blog</title>
+    <link>https://ERu085730.github.io/categories/%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8/</link>
+    <description>Recent content in 線性代數 on ERu&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jun 2020 20:10:17 +0800</lastBuildDate>
+    
+	<atom:link href="https://ERu085730.github.io/categories/%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vector Space 的構成要素及條件</title>
+      <link>https://ERu085730.github.io/post/linear_algebra1/</link>
+      <pubDate>Wed, 10 Jun 2020 20:10:17 +0800</pubDate>
+      
+      <guid>https://ERu085730.github.io/post/linear_algebra1/</guid>
+      <description>Vector Space 的構成三要素  V:一個集合 (內部為向量) F:稱為體，可進行加減乘除(內部為純量) 運算符號: &amp;lsquo;+&amp;rsquo;:加法(V加V) 、 &amp;lsquo;·&#39;:乘法(F乘V)  Vector Space 的十個成立條件 以下x,y,z皆屬於V α屬於F</description>
+    </item>
+    
+  </channel>
+</rss>
