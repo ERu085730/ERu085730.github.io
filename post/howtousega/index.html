@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.72.0" />
+
+  <title>Hugo新增流量追蹤功能(Google_Analytics) &middot; ERu&#39;s blog</title>
+
+  <meta name="description" content=" 擁有了網站，想必如何追蹤自己的網站的訪客(流量) 也是不可或缺的，因此我們需要兩個步驟來達成。" />
+
+  
+
+<meta itemprop="name" content="Hugo新增流量追蹤功能(Google_Analytics)">
+<meta itemprop="description" content=" 擁有了網站，想必如何追蹤自己的網站的訪客(流量) 也是不可或缺的，因此我們需要兩個步驟來達成。">
+<meta itemprop="datePublished" content="2020-06-11T16:41:16&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-11T16:41:16&#43;08:00" />
+<meta itemprop="wordCount" content="39">
+<meta itemprop="image" content="https://ERu085730.github.io/images/profile.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ERu085730.github.io/images/profile.png"/>
+
+<meta name="twitter:title" content="Hugo新增流量追蹤功能(Google_Analytics)"/>
+<meta name="twitter:description" content=" 擁有了網站，想必如何追蹤自己的網站的訪客(流量) 也是不可或缺的，因此我們需要兩個步驟來達成。"/>
+
+
+<meta property="og:title" content="Hugo新增流量追蹤功能(Google_Analytics)" />
+<meta property="og:description" content=" 擁有了網站，想必如何追蹤自己的網站的訪客(流量) 也是不可或缺的，因此我們需要兩個步驟來達成。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ERu085730.github.io/post/howtousega/" />
+<meta property="og:image" content="https://ERu085730.github.io/images/profile.png"/>
+<meta property="article:published_time" content="2020-06-11T16:41:16+08:00" />
+<meta property="article:modified_time" content="2020-06-11T16:41:16+08:00" /><meta property="og:site_name" content="Soho Theme" />
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="https://ERu085730.github.io/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="https://ERu085730.github.io/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="https://ERu085730.github.io/css/hyde.css">
+
+  
+
+
+  
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <img src="https://ERu085730.github.io/images/profile.png" class="img-circle img-headshot center" alt="Profile Picture">
+        </div>
+        
+      
+
+      <h1>ERu&#39;s blog</h1>
+
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://ERu085730.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="/about/"> About </a>
+        </li><li>
+          <a href="/post/"> Posts </a>
+        </li><li>
+          <a href="/categories/"> Categories </a>
+        </li><li>
+          <a href="/tags/"> Tags </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="https://github.com/ERu085730/" rel="me" title="GitHub">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1>Hugo新增流量追蹤功能(Google_Analytics)</h1>
+
+  <div class="post-date">
+    <time datetime="2020-06-11T16:41:16&#43;0800">Jun 11, 2020</time> · 1 min read
+  </div>
+
+  <p>擁有了網站，想必如何追蹤自己的網站的訪客(流量)
+也是不可或缺的，因此我們需要兩個步驟來達成。</p>
+<ol>
+<li>申請GA的帳號</li>
+<li>將GA的功能加入網站內</li>
+</ol>
+<h2 id="申請google-analytics-ga的帳號">申請Google Analytics (GA)的帳號</h2>
+<p>首先我們需要先到GA的官網點選&quot;開始測量&rdquo;
+<a href="https://analytics.google.com/">https://analytics.google.com/</a>
+<img src="/images/GA/GA1S.png" alt="image"></p>
+<p>填入想要的帳戶名稱，並點選下一步
+<img src="/images/GA/GA2S.png" alt="image"></p>
+<p>因為我們希望能追蹤網站的訪客，所以在這步點選網站，並點選下一步
+<img src="/images/GA/GA3S.png" alt="image"></p>
+<p>填入想要的網站名稱、需要追蹤的網站網址，並點選下一步
+<img src="/images/GA/GA4S.png" alt="image"></p>
+<p>到這步就算完成了申請，但先不要關閉此網頁，這一步的&quot;追蹤ID&quot;及&quot;全域網站代碼&rdquo;
+會需要在下一步加入至網站的原始碼內
+<img src="/images/GA/GA5S.png" alt="image"></p>
+<h2 id="將ga的功能加入網站內">將GA的功能加入網站內</h2>
+<p>開啟Hugo網站根目錄的config.toml
+並且加入以下的程式碼並儲存</p>
+<pre><code>googleAnalytics = &quot;UA-XXXXXX&quot; //UA-XXXXXX 需更換追蹤ID
+</code></pre>
+<p>開啟根目錄的\layouts中找到&quot;partials&quot;和&rdquo;_internal&quot;兩個目錄(若無請自行新增)<br>
+接著進到網站套用的主題目錄中的<br>
+\layouts\partials\head.html 或<br>
+\layouts\partials\header.html<br>
+複製到剛剛找到(建立)的partials裡
+<img src="/images/GA/GA11.png" alt="image"></p>
+<p>將head.html 或header.html 新增以下程式碼</p>
+<pre><code>{{ template &quot;_internal/google_analytics_async.html&quot; . }}
+</code></pre>
+<p>再到剛剛找到(建立)的_internal裡，新增一個檔案名<br>
+&ldquo;google_analytics_async.html&rdquo;，並將全域網站代碼複製到此檔案並儲存。</p>
+<h3 id="此時僅需發布您的網站即可於ga首頁查詢流量了">此時僅需發布您的網站即可於GA首頁查詢流量了</h3>
+<p><img src="/images/GA/GA12S.png" alt="image"></p>
+
+
+  <div class="disqus markdown">
+  <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://https-eru085730-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</div>
+
+
+  </main>
+
+  <footer>
+  <div>
+    &copy; ERu 2020
+    ·
+    
+    <a href="https://creativecommons.org/licenses/by-sa/4.0"
+       target="_blank">CC BY-SA 4.0</a>
+    
+    
+    ·
+    Build with <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://themes.gohugo.io/soho/" target="_blank">Soho</a> theme
+    
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169231814-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169231814-1');
+</script>
+
+</body>
+</html>

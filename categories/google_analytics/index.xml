@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google_Analytics on ERu&#39;s blog</title>
+    <link>https://ERu085730.github.io/categories/google_analytics/</link>
+    <description>Recent content in Google_Analytics on ERu&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jun 2020 16:41:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://ERu085730.github.io/categories/google_analytics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo新增流量追蹤功能(Google_Analytics)</title>
+      <link>https://ERu085730.github.io/post/howtousega/</link>
+      <pubDate>Thu, 11 Jun 2020 16:41:16 +0800</pubDate>
+      
+      <guid>https://ERu085730.github.io/post/howtousega/</guid>
+      <description>擁有了網站，想必如何追蹤自己的網站的訪客(流量) 也是不可或缺的，因此我們需要兩個步驟來達成。
+ 申請GA的帳號 將GA的功能加入網站內  申請Google Analytics (GA)的帳號 首先我們需要先到GA的官網點選&amp;quot;開始測量&amp;rdquo; https://analytics.</description>
+    </item>
+    
+  </channel>
+</rss>
