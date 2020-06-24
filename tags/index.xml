@@ -6,10 +6,19 @@
     <description>Recent content in Tags on ERu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jun 2020 14:26:32 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2020 19:32:11 +0800</lastBuildDate>
     
 	<atom:link href="https://ERu085730.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python應用</title>
+      <link>https://ERu085730.github.io/tags/python%E6%87%89%E7%94%A8/</link>
+      <pubDate>Wed, 24 Jun 2020 19:32:11 +0800</pubDate>
+      
+      <guid>https://ERu085730.github.io/tags/python%E6%87%89%E7%94%A8/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>batch file</title>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on ERu&#39;s blog</title>
+    <link>https://ERu085730.github.io/categories/python/</link>
+    <description>Recent content in Python on ERu&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Jun 2020 19:32:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://ERu085730.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>簡易網路爬蟲(Python)</title>
+      <link>https://ERu085730.github.io/post/pythoncrawler/</link>
+      <pubDate>Wed, 24 Jun 2020 19:32:11 +0800</pubDate>
+      
+      <guid>https://ERu085730.github.io/post/pythoncrawler/</guid>
+      <description>將搜尋到的網頁的資料收集起來並且製成表格需要3個工具
+所需工具  requests 下載網頁原始碼 BeautifulSoup 擷取原始碼中所需的資料 pandas 將資料轉換為表格  以下範例會抓取我自己的blog為例</description>
+    </item>
+    
+  </channel>
+</rss>

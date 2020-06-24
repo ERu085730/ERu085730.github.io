@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.72.0" />
+
+  <title>簡易網路爬蟲(Python) &middot; ERu&#39;s blog</title>
+
+  <meta name="description" content="將搜尋到的網頁的資料收集起來並且製成表格需要3個工具" />
+
+  
+
+<meta itemprop="name" content="簡易網路爬蟲(Python)">
+<meta itemprop="description" content="將搜尋到的網頁的資料收集起來並且製成表格需要3個工具">
+<meta itemprop="datePublished" content="2020-06-24T19:32:11&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-24T19:32:11&#43;08:00" />
+<meta itemprop="wordCount" content="184">
+<meta itemprop="image" content="https://ERu085730.github.io/images/profile.png"/>
+
+
+
+<meta itemprop="keywords" content="Python應用," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ERu085730.github.io/images/profile.png"/>
+
+<meta name="twitter:title" content="簡易網路爬蟲(Python)"/>
+<meta name="twitter:description" content="將搜尋到的網頁的資料收集起來並且製成表格需要3個工具"/>
+
+
+<meta property="og:title" content="簡易網路爬蟲(Python)" />
+<meta property="og:description" content="將搜尋到的網頁的資料收集起來並且製成表格需要3個工具" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ERu085730.github.io/post/pythoncrawler/" />
+<meta property="og:image" content="https://ERu085730.github.io/images/profile.png"/>
+<meta property="article:published_time" content="2020-06-24T19:32:11+08:00" />
+<meta property="article:modified_time" content="2020-06-24T19:32:11+08:00" /><meta property="og:site_name" content="Soho Theme" />
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="https://ERu085730.github.io/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="https://ERu085730.github.io/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="https://ERu085730.github.io/css/hyde.css">
+
+  
+
+
+  
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <img src="https://ERu085730.github.io/images/profile.png" class="img-circle img-headshot center" alt="Profile Picture">
+        </div>
+        
+      
+
+      <h1>ERu&#39;s blog</h1>
+
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://ERu085730.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="/post/"> Posts </a>
+        </li><li>
+          <a href="/about/"> About </a>
+        </li><li>
+          <a href="/tags/"> Tags </a>
+        </li><li>
+          <a href="/categories/"> Categories </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="https://github.com/ERu085730/" rel="me" title="GitHub">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1>簡易網路爬蟲(Python)</h1>
+
+  <div class="post-date">
+    <time datetime="2020-06-24T19:32:11&#43;0800">Jun 24, 2020</time> · 1 min read
+  </div>
+
+  <p>將搜尋到的網頁的資料收集起來並且製成表格需要3個工具</p>
+<h2 id="所需工具">所需工具</h2>
+<ol>
+<li>requests       下載網頁原始碼</li>
+<li>BeautifulSoup  擷取原始碼中所需的資料</li>
+<li>pandas         將資料轉換為表格</li>
+</ol>
+<p>以下範例會抓取我自己的blog為例</p>
+<h2 id="下載網頁原始碼">下載網頁原始碼</h2>
+<p>程式碼:</p>
+<pre><code>#use requests
+import requests 
+
+# target page
+url = &quot;https://eru085730.github.io/&quot;
+
+# crawler page
+craw = requests.get(url)
+
+#set the val save the data
+w_content = craw.text
+</code></pre>
+<h2 id="擷取原始碼中所需的資料">擷取原始碼中所需的資料</h2>
+<p>我希望能夠抓取每一篇文章的標題，因此從下方圖片<br>
+可以發現標題是被放在&quot;&lt;h1 class=&quot;posr-title&quot;&ldquo;裡面<br>
+，所以我們可以這樣擷取</p>
+<p><img src="/images/Crawler/C1.png" alt="image"></p>
+<p>程式碼:</p>
+<pre><code>#use BeautifulSoup	
+from bs4 import BeautifulSoup
+
+#decode  html data
+soup = BeautifulSoup(w_content, 'lxml')
+
+#find target element
+t_element = soup.find_all('h1', class_=&quot;post-title&quot;)
+t_element
+
+#data put in an
+da = [e.text for e in t_element ]
+da
+an = []
+for bn in zip(da):
+        bn = str(bn)
+        bn= bn[4:len(bn)-5]
+        an.append(bn)
+</code></pre>
+<h2 id="將資料轉換為表格">將資料轉換為表格</h2>
+<p>程式碼:</p>
+<pre><code>#use pandas
+import pandas as pd
+
+sh = pd.DataFrame({
+   &quot;Title&quot; : an
+})
+
+sh.head()
+</code></pre>
+<h2 id="成果">成果</h2>
+<p>程式碼:</p>
+<pre><code>import requests
+import pandas as pd
+from bs4 import BeautifulSoup
+
+# target page
+url = &quot;https://eru085730.github.io/&quot;
+
+# crawler page
+craw = requests.get(url)
+
+#set the val save the data
+w_content = craw.text
+
+#decode  html data
+soup = BeautifulSoup(w_content, 'lxml')
+
+#find target element
+t_element = soup.find_all('h1', class_=&quot;post-title&quot;)
+t_element
+
+#data
+da = [e.text for e in t_element ]
+da
+
+an = []
+for bn in zip(da):
+    bn = str(bn)
+    bn= bn[4:len(bn)-5]
+    an.append(bn)
+    
+sh = pd.DataFrame({
+    &quot;Title&quot; : an
+})
+
+sh.head()
+</code></pre>
+<p><img src="/images/Crawler/C2.png" alt="image"></p>
+
+
+  <div class="disqus markdown">
+  <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://https-eru085730-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</div>
+
+
+  </main>
+
+  <footer>
+  <div>
+    &copy; ERu 2020
+    ·
+    
+    <a href="https://creativecommons.org/licenses/by-sa/4.0"
+       target="_blank">CC BY-SA 4.0</a>
+    
+    
+    ·
+    Build with <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://themes.gohugo.io/soho/" target="_blank">Soho</a> theme
+    
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169231814-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169231814-1');
+</script>
+
+</body>
+</html>

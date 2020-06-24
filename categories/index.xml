@@ -6,10 +6,37 @@
     <description>Recent content in Categories on ERu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2020 16:41:16 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2020 19:32:11 +0800</lastBuildDate>
     
 	<atom:link href="https://ERu085730.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Crawler</title>
+      <link>https://ERu085730.github.io/categories/crawler/</link>
+      <pubDate>Wed, 24 Jun 2020 19:32:11 +0800</pubDate>
+      
+      <guid>https://ERu085730.github.io/categories/crawler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://ERu085730.github.io/categories/python/</link>
+      <pubDate>Wed, 24 Jun 2020 19:32:11 +0800</pubDate>
+      
+      <guid>https://ERu085730.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>網路爬蟲</title>
+      <link>https://ERu085730.github.io/categories/%E7%B6%B2%E8%B7%AF%E7%88%AC%E8%9F%B2/</link>
+      <pubDate>Wed, 24 Jun 2020 19:32:11 +0800</pubDate>
+      
+      <guid>https://ERu085730.github.io/categories/%E7%B6%B2%E8%B7%AF%E7%88%AC%E8%9F%B2/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>GA</title>
