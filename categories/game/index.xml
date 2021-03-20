@@ -17,7 +17,8 @@
       <pubDate>Sat, 20 Mar 2021 10:04:49 +0800</pubDate>
       
       <guid>https://ERu085730.github.io/post/pythongame/</guid>
-      <description>gggggggggggg</description>
+      <description>gggggggggggg
+var playerElement = document.getElementById(&#34;player-wrapper&#34;);var player = new Clappr.</description>
     </item>
     
   </channel>
