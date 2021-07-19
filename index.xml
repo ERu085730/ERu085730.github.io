@@ -6,10 +6,21 @@
     <description>Recent content in Soho Theme on ERu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Mar 2021 17:40:41 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jul 2021 14:56:33 +0800</lastBuildDate>
     
 	<atom:link href="https://ERu085730.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shoppint_cart</title>
+      <link>https://ERu085730.github.io/post/shoppint_cart/</link>
+      <pubDate>Mon, 19 Jul 2021 14:56:33 +0800</pubDate>
+      
+      <guid>https://ERu085730.github.io/post/shoppint_cart/</guid>
+      <description>shopping-cart 功能: -點擊商品跳出商品介紹 -加入/刪除商品至購物車
+html/css: -Sassy css(scss) -RWD
+jascript: -es6 classes</description>
+    </item>
     
     <item>
       <title>youtube影片嵌入(React實作)</title>
